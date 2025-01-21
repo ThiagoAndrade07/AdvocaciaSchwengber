@@ -1,0 +1,120 @@
+.blog{
+    padding: 5px 36px 20px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-blog{
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--var-cor-azul-escuro);
+    text-align: center;
+    margin: 20px;;
+}
+.texto-blog-pri{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 300;
+    color: var(--var-cor-azul-escuro);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.container-blog-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-blog-main-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blog-artigo-img{
+    border: 1px solid #707070;
+    border-radius: 10px;
+}
+.container-blog-main-box h3{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--var-cor-amarelo-primario);
+    margin: 10px 0;
+}
+.container-blog-main-box p {
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.5;
+    color: var(--var-cor-azul-escuro);
+    margin-bottom: 10px;
+}
+.btn-blog{
+    padding: 6px 25px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: var(--var-cor-amarelo-primario);
+    border-radius: 100px;
+    width: fit-content;
+}
+
+@media screen and (min-width:720px){
+    
+    .container-blog-main{
+        flex-direction: row;
+    }
+    .container-blog-main-box p{
+        width: 70%;
+        text-align: justify;
+    }
+    .container-blog-main-box-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:1024px){
+    
+    .title-blog{
+        font-size: 25px;
+    }
+    .texto-blog-pri{
+        font-size: 16px;
+    }
+    .container-blog-main-box-info p{
+        font-size: 16px;
+    }
+    .btn-blog{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:1500px){
+    .blog{
+        padding: 0 140px 60px 140px;
+    }
+    .title-blog{
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    .texto-blog-pri{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .container-blog-main-box-info p{
+        font-size: 28px;
+    }
+    .container-blog-main-box-info h3{
+        font-size: 28px;
+    }
+    .btn-blog{
+        font-size: 25px;
+        padding: 10px 30px;
+    }
+    .blog-artigo-img{
+        min-width: 300px;
+    }
+}

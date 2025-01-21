@@ -1,0 +1,56 @@
+.depoimentos-section {
+    background-color: var(--var-cor-amarelo-primario); 
+    padding: 20px 36px;      
+    text-align: center;
+  }
+  
+  .depoimentos-section h2 {
+    color: var(--var-cor-azul-escuro);  
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  
+  .depoimento-card {
+    background-color: var(--var-cor-branca);
+    border-radius: 30px;  
+    margin: 0 auto;    
+    max-width: 700px;
+    padding: 40px;
+  }
+  
+  .texto-depoimento {
+    color: var(--var-cor-azul-escuro);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .autor-depoimento {
+    display: block;
+    color: var(--var-cor-amarelo-primario);      
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  @media screen and (min-width:1024px) {
+    .depoimentos-section{
+        padding: 30px 140px;
+    }
+  }
+
+  @media screen and (min-width:1500px) {
+    .depoimentos-section{
+        padding: 50px 200px;
+    }
+    .depoimentos-section h2{
+        font-size: 36px;
+    }
+    .texto-depoimento{
+        font-size: 22px;
+    }
+    .autor-depoimento{
+        font-size: 25px;
+    }
+  }

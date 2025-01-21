@@ -1,0 +1,186 @@
+.contato-duvidas {
+    display: flex;
+    flex-direction: column; 
+    background-color: var(--var-cor-creme-claro); 
+    padding: 20px 36px;
+  }
+  
+  .contato-info {
+    color: var(--var-cor-azul-escuro);    
+  }
+  
+  .contato-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-wrap: nowrap;
+    margin-bottom: 16px;
+  }
+  
+  .contato-info p {
+    margin-bottom: 18px;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: justify;
+  }
+
+  .contato-info p span{
+    font-weight: bold;
+  }
+ 
+  .lista-contatos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .li-cont-prev {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+  .li-cont-prev span {
+    font-size: 14px;
+  }
+  .li-cont-prev:last-child{
+    margin-bottom: 20px;
+  }
+  
+  .lista-contatos li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  .contato-form {
+    background-color: var(--var-cor-azul-escuro);
+    border-radius: 20px;
+    padding: 20px;
+    color: var(--var-cor-branca);
+  }
+  
+  /* Labels do formulário */
+  .contato-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Inputs do formulário */
+  .contato-form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+  }
+
+  .container-btn-form{
+    display: flex;
+    justify-content: end;
+    margin-right: 4px;
+  }
+  
+  /* Botão de envio */
+  .contato-form button {
+    background-color: var(--var-cor-amarelo-primario);
+    color: var(--var-cor-branca); 
+    border: none;
+    border-radius: 30px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 10px 0;;
+  }
+  
+  .contato-form button:hover {
+    background-color: var(--var-cor-amarelo-secundario); 
+  }
+  
+  
+  @media (min-width: 720px) {
+    .contato-duvidas {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .contato-info {
+      width: 45%; 
+      margin-bottom: 0;
+    }
+    .contato-form-container {
+      width: 50%;
+      height: 100%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .contato-duvidas { 
+      padding: 30px 140px;
+    }
+    .contato-info p {
+      font-size: 16px;
+    }
+
+  }
+  @media (min-width: 1500px) {
+    .contato-duvidas { 
+      padding: 50px 200px;
+    }
+    .contato-info h2 {
+      font-size: 36px;
+      margin-bottom: 22px;
+    }
+    .contato-info p {
+      font-size: 22px;
+    }
+    .li-cont-prev span {
+      font-size: 22px;
+    }
+    .lista-contatos li img {
+      width: 30px;
+      height: 30px;
+      margin-right: 12px;
+    }
+    .contato-form{
+      min-height: 300px;
+    }
+
+  }
+
+  @media (min-width: 1920px) {
+    .contato-duvidas { 
+      padding: 50px 270px;
+      align-items: center;
+    }
+    
+    .contato-form{
+      min-height: 400px;
+    }
+
+    .contato-form label {
+      width: fit-content;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    
+    .contato-form input {
+      width: 96%;
+      padding: 20px 15px;
+      font-size: 1.2rem;
+    }
+  
+    .container-btn-form{
+      margin-right: -4px;
+    }
+    
+    .contato-form button {
+      font-size: 25px;
+      margin: 10px 0;
+    }
+  }
+  

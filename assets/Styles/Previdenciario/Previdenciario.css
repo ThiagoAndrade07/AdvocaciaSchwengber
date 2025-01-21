@@ -1,0 +1,70 @@
+@import url("../Variaveis.css");
+@import url("./HeaderPrev.css");
+@import url("./Descubra.css");
+@import url("./Isencoes.css");
+@import url("./ComoAuxiliar.css");
+@import url("./PorqueEscolher.css");
+@import url("./ContatoDuvida.css");
+@import url("./Faq.css");
+@import url("../PaginaInicial/Footer.css");
+@import url("./Depoimentos.css");
+
+body{
+    font-family: "Poppins", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.video-header-desktop{
+    width: 100%;
+    height:30vh;  
+    object-fit: cover;
+    object-position: left;
+}
+
+
+/* WHATSAPP */
+.link-whatsapp {
+    background-color: #25D366;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+    position: fixed;
+    top: 95%;
+    left: 95%;
+    transform: translate(-95%, -95%);
+    z-index: 50;
+}
+
+.link-whatsapp:hover {
+    transform: translate(-95%, -95%) scale(1.1);
+    background-color: #14ac4c;
+}
+
+.link-whatsapp:active {
+    transform: translate(-95%, -95%) scale(1);
+}
+
+.link-whatsapp img {
+    height: 70%;
+    width: 70%;
+}
+
+@media screen and (min-width:720px) {
+    .video-header-desktop{
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .link-whatsapp {
+        height: 70px;
+        width: 70px;
+    }
+  }

@@ -1,0 +1,120 @@
+.porque-container {
+    text-align: center;
+    padding: 20px 36px;
+  }
+  
+  .porque-container h2 {
+    color: var(--var-cor-azul-escuro);
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  
+  .porque-cards {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 20px;             
+  }
+  
+  .porque-card {
+    background-color: var(--var-cor-amarelo-primario); 
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+    
+  }
+  
+  .porque-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .porque-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--var-cor-azul-escuro);
+  }
+  
+  .porque-card p {
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--var-cor-azul-escuro);
+    width: 80%;
+    text-align: justify;
+  }
+  
+  @media screen and (min-width: 720px) {
+    .porque-cards {
+      flex-direction: row; 
+    }
+    .porque-card{
+      min-width: 155px;
+      max-width: 155px;
+      min-height: 300px;
+      max-height: 300px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .porque-container {
+        padding: 30px 140px;
+      }
+      .porque-card h3 {
+        font-size: 18px;
+      }
+      
+      .porque-card p {
+        font-size: 16px;
+      }
+      .porque-card{
+        min-width: 195px;
+        max-width: 195px;
+        min-height: 350px;
+        max-height: 350px;
+      }
+  }
+
+  @media screen and (min-width: 1350px)
+  {
+    .porque-card{
+      min-width: 300px;
+      max-width: 300px;
+      min-height: 280px;
+      max-height: 280px;
+    }
+  }
+  @media screen and (min-width: 1500px) {
+    .porque-container {
+        padding: 50px 200px;
+      }
+      .porque-container h2{
+        font-size: 36px;
+      }
+      .porque-card h3 {
+        font-size: 30px;
+      }
+      
+      .porque-card p {
+        font-size: 22px;
+      }
+      .porque-card{
+        border-radius: 60px;
+        max-width: 400px;
+      }
+      .porque-card{
+        min-height: 350px;
+      }
+  }
+
+  @media screen and (min-width: 1920px){
+    .porque-cards {
+        gap:  50px;
+    }
+}

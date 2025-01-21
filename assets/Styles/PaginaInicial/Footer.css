@@ -1,0 +1,180 @@
+.footer-mobile{
+    background: transparent linear-gradient(257deg, #00114CDB 0%, #00114C 100%) 0% 0% no-repeat padding-box;
+    padding: 20px 36px;
+}
+.footer-desktop{
+    display: none;
+}
+.container-footer-1-divisao, .container-footer-2-divisao{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.title-footer{
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--var-cor-amarelo-primario);
+}
+.container-footer-contato-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.container-footer-endereco-box{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.container-footer-endereco-box img {
+    margin-top: 3px;
+}
+.container-footer-contato-box img, .container-footer-endereco-box img, .container-footer-redes-box img{
+    max-width: 20px;
+    margin-right: 10px;
+}
+.container-footer-contato-box li, .container-footer-endereco-box li, .container-footer-redes-box li{
+    color: var(--var-cor-branca);
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.container-footer-contato-box li{
+    text-wrap: nowrap;
+}
+
+.container-footer-mapa-site-box a, .container-footer-institucional-box a{
+    text-decoration: none;
+    font-size: 10px;
+    color: var(--var-cor-branca);
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+.container-footer-logo img{
+    max-width: 200px;
+    margin-bottom: 5px;
+}
+.container-footer-logo p{
+    font-size: 10px;
+    font-weight: 300;
+    color: var(--var-cor-branca);
+    line-height: 1.5;
+    width: 90%;
+    text-align: justify;
+}
+
+@media screen and (min-width:1024px){
+    #container-footer-contato-box li, #container-footer-endereco-box li, #container-footer-mapa-site-box li a, 
+    #container-footer-institucional-box li a, #container-footer-logo p{
+        font-size: 14px;
+    }
+    .container-footer-mapa-site-box li, 
+    .container-footer-institucional-box li{
+        margin: 10px 0;
+        text-wrap: nowrap;
+    }
+    #container-footer-mapa-site{
+        margin-right: 30px;
+    }
+    .container-footer-mapa-site-box li a{
+        text-wrap: nowrap;
+    }
+    .title-footer{
+        font-size: 16px;
+    }
+    .container-footer-redes-box img{
+        max-width: 30px;
+    }
+    .container-footer-main-mobile{
+        display: none;
+    }
+    .footer-desktop{
+        display: flex;
+    }
+    .container-footer-logo{
+        width: 30%;
+    }
+    .container-footer-logo p{
+        max-width: 200px;
+        width: 70%;
+    }
+    .container-footer-desktop-flex{
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+    }
+    #container-footer-institucional{
+        width: 40%;
+    }
+    .container-footer-endereco-box{
+        margin-bottom: 22px;
+    }
+    .container-footer-endereco-box img {
+        margin-top: 3px;
+    }
+    .ult-div-footer{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width:1500px){
+    .footer-desktop{
+        padding: 40px 50px 10px 50px;
+    }
+    .container-footer-contato-box li, .container-footer-endereco-box li, .container-footer-mapa-site-box li a, 
+    .container-footer-institucional-box li a,.container-footer-logo p{
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .container-footer-endereco-box img {
+        margin-top: 7px;
+    }
+    .container-footer-logo img{
+        max-width: 370px;
+        margin-bottom: 30px;
+    }
+    .container-footer-logo p{
+        max-width: 370px;
+        width: 100%;
+    }
+    .container-footer-mapa-site-box li, 
+    .container-footer-institucional-box li{
+        margin: 20px 0;
+    }
+    #container-footer-mapa-site{
+        margin: 0 30px;
+    }
+    .title-footer{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .container-footer-redes-box img{
+        max-width: 50px;
+        margin-right: 15px;
+    }
+    .footer-desktop{
+        display: flex;
+    }
+    .container-footer-logo{
+        width: 30%;
+    }
+    #container-footer-institucional{
+        width: 40%;
+        margin-bottom: 22px;
+    }
+    .ult-div-footer{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width:1900px){
+    #container-footer-endereco{
+        margin-bottom: 30px;
+    }
+    .container-footer-endereco-box img {
+        margin-top: 7px;
+    }
+}

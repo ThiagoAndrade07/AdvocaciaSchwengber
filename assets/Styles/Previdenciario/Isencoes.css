@@ -1,0 +1,155 @@
+.accordion-container {
+    padding: 20px;
+    margin: 0 auto;
+    background-color: var(--var-cor-creme-claro);
+  }
+  
+  .accordion-grid {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr;
+    gap: 1rem;                
+  }
+  
+  @media (min-width: 600px) {
+    .accordion-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .accordion-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .accordion-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .accordion-grid .item-50 {
+      grid-column: span 2;
+    }
+    
+  }
+  
+  .accordion-item {
+    background-color: var(--var-cor-amarelo-primario); 
+    border-radius: 60px; 
+    overflow: hidden; 
+    transition: border-radius 1s ease;
+    align-self: start;
+  }
+
+  
+  .accordion-trigger {
+    width: 100%;
+    padding: 5px 15px;
+    background: none;
+    border: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--var-cor-azul-escuro);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .accordion-item.open {
+    border-radius: 20px;
+  }
+
+  .accordion-icon img {
+    transition: max-height 1s ease;
+    transform: rotate(0deg);
+  }
+  
+  .accordion-icon {
+   width: 30px; 
+  }
+  
+  .accordion-content {
+    max-height: 0;            
+    overflow: hidden;
+    transition: max-height 0.7s ease;
+  }
+
+  .accordion-content p{
+    color: var(--var-cor-azul-escuro);
+    text-align: left;
+    font-size: 12px;
+    font-weight: 300;
+    min-height: fit-content;
+    padding: 5px 20px 10px 20px;
+  }
+
+  .font-light{
+    font-weight: 300;
+  }
+  
+  .accordion-item.open .accordion-content {
+    max-height: 400px; 
+    min-height: 90px; 
+  }
+
+  @media screen and (min-width:600px){
+    .accordion-item.open .accordion-content {
+      min-height: 115px; 
+    }
+  }
+
+  @media screen and (min-width:720px){
+    .accordion-container{
+      padding: 36px 40px;
+    }
+  }
+
+  @media screen and (min-width:1024px){
+    .accordion-container{
+      padding: 50px 140px;
+    }
+    .accordion-trigger span{
+      font-size: 16px;
+    }
+    .accordion-trigger{
+      min-height: 65px;
+    }
+    .accordion-content p{
+      font-size: 14px;
+    }
+    .accordion-item.open .accordion-content {
+      min-height: 185px; 
+    }
+  }
+
+  @media screen and (min-width:1500px){
+    .accordion-container{
+      padding: 50px 200px;
+    }
+    .accordion-trigger{
+      padding: 10px 40px;
+      min-height: 90px;
+    }
+    .accordion-trigger span{
+      font-size: 20px;
+    }
+    .accordion-content p{
+      font-size: 20px;
+      margin-left: 20px;
+    }
+    .accordion-grid {
+      gap: 30px 16px;                
+    }
+    .accordion-item.open .accordion-content {
+      min-height: 320px; 
+      min-width: 260px;
+    }
+  }
+
+  @media screen and (min-width:1920px){
+    .accordion-trigger{
+      padding: 15px;
+    }
+  }

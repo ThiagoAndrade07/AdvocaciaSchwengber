@@ -1,0 +1,119 @@
+.faq-container {
+    padding: 20px 36px;
+  }
+  
+  .faq-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--var-cor-azul-escuro);
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  /* A pergunta */
+  .faq-question {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 14px;
+    color: var(--var-cor-preta);
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  /* R da resposta */
+  .r-faq{
+    color: var(--var-cor-azul-escuro);
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  /* A resposta */
+  .faq-answer {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--var-cor-preta);
+    text-align: justify;
+  }
+  
+  .faq-toggle-btn {
+    background-color: var(--var-cor-amarelo-primario); 
+    color: var(--var-cor-azul-escuro);
+    border: none;
+    border-radius: 30px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .faq-icon {
+    width: 20px;
+    transition: transform 1s ease;
+  }
+  
+  .faq-toggle-btn:hover {
+    background-color: var(--var-cor-amarelo-secundario);
+  }
+  
+
+  .faq-item-extra {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 1s ease, opacity 1s ease;
+  }
+  
+  .faq-item-extra.open {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  @media screen and (min-width:1024px) {
+    .faq-container{
+        padding: 30px 140px;
+    }
+  }
+
+  @media screen and (min-width:1500px) {
+    .faq-container{
+        padding: 50px 200px;
+    }
+    .faq-container h2{
+        font-size: 36px;
+    }
+
+    /* A pergunta */
+  .faq-question {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  /* R da resposta */
+  .r-faq{
+    font-size: 22px;
+  }
+  
+  /* A resposta */
+  .faq-answer {
+    font-size: 22px;
+  }
+  
+  .faq-toggle-btn {
+    padding: 8px 16px;
+    font-size: 22px;
+    gap: 8px;
+  }
+}
+
+@media screen and (min-width:1920px) {
+    .faq-container{
+        padding: 50px 270px;
+    }
+}
