@@ -18,7 +18,7 @@ html {
 }
 .video-header-desktop{
     width: 100%;
-    height:30vh;  
+    height:31vh;  
     object-fit: cover;
     object-position: left;
 }
