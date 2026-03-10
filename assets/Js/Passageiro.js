@@ -77,7 +77,7 @@ form.addEventListener("submit", function (e) {
   mensagem += `*Telefone:* ${telefoneVal}\n`;
   mensagem += `*E-mail:* ${emailVal}`;
 
-  const numeroDestino = "5565999915441";
+  const numeroDestino = "5541988110350";
 
   const urlWhats = `https://api.whatsapp.com/send?phone=${numeroDestino}&text=${encodeURIComponent(mensagem)}`;
 
@@ -108,4 +108,5 @@ btnVerMais.addEventListener("click", () => {
     perguntasVisiveis = false;
   }
 });
+
 
